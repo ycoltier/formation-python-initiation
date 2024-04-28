@@ -441,7 +441,12 @@ Afficher le type de x lorsque :
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = 3
+print(type(x))
+x = "test"
+print(type(x))
+x = 3.5
+print(type(x))
 ```
 
 
@@ -466,7 +471,10 @@ Calculer la somme des longueurs de chacune des chaînes de caractères suivantes
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = "une première chaîne"
+y = "et une deuxième"
+z = "jamais deux sans trois"
+print(len(x)+len(y)+len(z))
 ```
 
 
@@ -491,7 +499,11 @@ Que concluez-vous ?
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = int(92120)
+y = str(92120)
+a = int('02350')
+b = str('02350')
+print(x,y,a,b)
 ```
 
 
@@ -511,7 +523,8 @@ Compter le nombre de fois où la lettre e est présente dans la chaîne suivante
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = "Je fais un comptage des e."
+print(x.count('e'))
 ```
 
 
@@ -530,7 +543,8 @@ Repérer la première position où la lettre e est présente dans la chaîne sui
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = "Je fais un comptage des e."
+print(x.find('e'))
 ```
 
 
@@ -550,6 +564,7 @@ Supprimer les espaces superflus au début et à la fin de la chaîne suivante :
 ```{python}
 # Tapez votre réponse dans cette cellule
 a = "    Un string très mal formatté.         "
+print(a.strip())
 ```
 
 
@@ -568,7 +583,8 @@ Le caractère `\` permet d'échapper (neutraliser) un caractère spécial au sei
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+a = 'J\'achete du pain'
+print(a)
 ```
 
 
@@ -593,7 +609,11 @@ Réaliser la suite d'opérations suivantes à l'aide des opérateurs d'incrémen
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
-
+x = 1
+x -= 5
+x *= 4
+x += 22
+print(x)
 ```
 
 
@@ -618,7 +638,12 @@ Trouvez à partir du tutoriel deux manières différentes de les utiliser pour c
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
+x = "nous sommes en"
+y = "nous sommes en {}"
+z = "2024"
 
+print(x + " " + z)
+print(y.format(z))
 ```
 
 ```{python}
@@ -653,7 +678,12 @@ En vous inspirant de la [documentation officielle](https://docs.python.org/fr/3/
 ::: {.content-visible when-profile="notebooks"}
 ```{python}
 # Tapez votre réponse dans cette cellule
+a = '2024'
+b = 2024
 
+# print(a1 + b) Erreur
+
+print(f"{a1} {b} et aussi en {a}")
 ```
 
 ```{python}
